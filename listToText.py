@@ -34,5 +34,5 @@ for l in selements[:-1]:
     out_lines += Add_text(l, eld, 'トラックタイトル') + '/'
     out_lines += Add_text(l, eld, 'アーティスト') + '/'
     out_lines += Add_text(l, eld, 'コメント') + '\n'
-with open(makeName,'w') as f:
+with open(makeName,'w', encoding='UTF-8') as f:
     f.write(out_lines)
